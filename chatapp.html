@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Chapter2</title>
+    <link rel="stylesheet" href="chatapp.css">
+  </head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box" id="chatBox1">
+            <div class="chat-header">Person 1</div>
+            <div class="typing-indicator" id="typing1" style="display:none;">Person 2 is typing...</div>
+            <div class="chat-messages" id="messages1"></div>
+            <div class="chat-footer">
+                <input type="text" id="input1" placeholder="Type a message...">
+                <button onclick="sendMessage('person1')">Send</button>
+            </div>
+        </div>
+        <div class="chat-box" id="chatBox2">
+            <div class="chat-header">Person 2</div>
+            <div class="typing-indicator" id="typing2" style="display:none;">Person 1 is typing...</div>
+            <div class="chat-messages" id="messages2"></div>
+            <div class="chat-footer">
+                <input type="text" id="input2" placeholder="Type a message...">
+                <button onclick="sendMessage('person2')">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="chatapp.js"></script>
+</body>
+</html>

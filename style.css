@@ -1,0 +1,15 @@
+h3 {
+   color:red;
+   background-color:aqua;
+}
+h2{
+    color: rgb(120,40,83);
+}
+p{ 
+  color:rgb(37, 19, 202);
+  background-color: rgb(240, 157, 97);
+}
+button{ 
+    color:blue;
+    background-color:rgb(79, 255, 79);
+}

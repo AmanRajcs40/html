@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #f2f3f8;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chat-container {
+    display: flex;
+    gap: 30px;
+}
+
+
+.chat-box {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.chat-header {
+    background-color: #1f9a3c;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+.chat-messages {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 200px; 
+    border-bottom: 1px solid #ddd;
+}
+
+
+.chat-footer {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+
+.chat-footer input {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+.chat-footer button {
+    background-color: #ea1555;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 0;
+    transition: background-color 0.3s ease;
+}
+
+.chat-footer button:hover {
+    background-color: #198b43;
+}
+
+.message {
+    margin: 8px 0;
+    padding: 10px 14px;
+    border-radius: 12px;
+    max-width: 70%;
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+
+.message.sent {
+    background-color: #e2be83;
+    color: white;
+    align-self: flex-end;
+}
+
+.message.received {
+    background-color: #e19339;
+    color: #333;
+    align-self: flex-start;
+}
+.typing-indicator {
+    font-size: 0.9rem;
+    color: #b7b5b5;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    font-style: italic;
+}
